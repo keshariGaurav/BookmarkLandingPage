@@ -1,0 +1,48 @@
+.cards{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+    margin-top:3rem;
+    justify-content: space-around;
+     @include respond(tab-port)
+     {
+        justify-content: space-between;
+     }
+     @include respond(phone)
+         {
+             flex-direction: column;
+             align-items: center;
+             width:100%;
+             margin:0 auto;
+             margin-top:3rem;
+         }
+}
+.card{
+    width:24rem;
+    padding:2rem;
+    background-color: #f8f8f8;
+    box-shadow: 2px 2px 8px rgba(black,.1);
+    text-align: center;
+    @include respond(tab-port)
+     {
+         padding:1rem;
+         width:20rem;
+     }
+    &__logo{
+        margin-bottom: 1rem;
+     @include respond(tab-port)
+     {
+         width:50%;
+     }
+    }
+    &__bg--logo{
+        width:80%;
+        margin:0 auto;
+    }
+}
+.card--2{
+    transform: translateY(40px);
+}
+.card--3{
+    transform:translateY(60px);
+}

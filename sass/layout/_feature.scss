@@ -1,0 +1,77 @@
+.features{
+    grid-column: 1/-1;
+    
+    &__header{
+        text-align: center;
+        width:60%;
+        margin:0 auto;
+        @include respond(phone)
+    {
+        width:90%;
+    }
+    }
+    &__component{
+        margin-top:5rem;
+        display:none;
+       
+        justify-content: space-between;
+         @include respond(tab-port)
+         {
+             flex-direction: column;
+         }
+         @include respond(phone)
+         {
+             text-align: center;
+         }
+        
+    }
+    
+}
+.active{
+    display:flex;
+}
+.tab{
+    display:flex;
+    justify-content: space-between;
+   border-bottom:1px solid rgba(black,0.2);
+   & >button:not(:last-child)
+   {
+       margin-right:1rem;
+   }
+   
+    &__list{
+        list-style-type: none;
+        border-bottom:3px solid $color-secondary;
+        
+        &:not(:last-child)
+        {
+            margin-right:2rem;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        font-size:1.8rem;
+        cursor: pointer;
+        padding-bottom:4rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+}
+
+.component{ 
+   &__left{
+       &--img{
+           width:90%;
+           margin:0 auto;
+       }
+   }
+    &__right{
+     
+        padding:2rem;
+        @include respond(phone)
+    {
+       width:90%;
+       margin:0 auto;
+    }
+    }
+}

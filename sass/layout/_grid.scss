@@ -1,0 +1,14 @@
+.body{
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns:
+    [full-start left-start] 1fr [left-end right-start] 1fr [right-end full-end];
+    margin:5rem;
+    max-width:1200px;
+    margin:5rem auto;
+    @include respond(tab-land)
+    {
+        padding:2rem;
+        margin:0;
+    }
+}

@@ -1,0 +1,64 @@
+.header{
+    grid-column: 1/-1;
+    display:flex;
+    
+    justify-content: space-between;
+    margin-top:5rem;
+     @include respond(tab-port)
+     {
+        align-items: flex-end;
+     }
+     @include respond(phone)
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    &__left{
+    width:40%;
+     @include respond(tab-port)
+     {
+         width:50%;
+        
+     }
+     @include respond(phone)
+         {
+             width:100%;
+             text-align: center;
+         }
+    
+    }
+    &__right{
+    width:60%;
+    display: flex;
+    justify-content: flex-end;
+      @include respond(tab-port)
+     {
+         width:50%;
+     }
+     @include respond(phone)
+         {
+             width:100%;
+             text-align: center;
+             margin-top:1.5rem;
+         }
+    }
+    &__image{
+        width:90%;
+        margin:0 auto;
+       
+    }
+    
+}
+.cta{
+    display:flex;
+    @include respond(phone)
+    {
+        justify-content: center;
+    }
+    &__btn{
+        &:not(:last-child)
+        {
+            margin-right:2rem;
+        }
+    }
+}

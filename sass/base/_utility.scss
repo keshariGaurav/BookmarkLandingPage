@@ -1,0 +1,41 @@
+.mt-1{
+margin-top:1rem;
+}
+.mt-2{
+margin-top:2rem;
+}
+.mt-3{
+margin-top:3rem;
+
+}
+.mt-4{
+    margin-top:4rem;
+    @include respond(phone)
+    {
+        margin-top: 2rem;
+    }
+}
+.mt-5{
+    margin-top:5rem;
+    @include respond(phone)
+    {
+        margin-top: 3rem;
+    }
+}
+.mb-3{
+    margin-bottom:3rem;
+}
+.center{
+    text-align: center;
+}
+.minimize{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.center-el{
+    display: block;
+    width:max-content;
+    margin:2rem auto;
+    justify-content: center;
+}

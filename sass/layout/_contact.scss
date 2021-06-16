@@ -1,0 +1,32 @@
+.contact__form{
+ width:100%;
+ padding:2rem;
+     text-align: center;
+    background-color: $color-primary;
+    &--para{
+        color:white;
+    }
+    &--heading{
+        color:white;
+    }
+}
+.email__input{
+   
+    padding:2rem;
+    border:none;
+    outline:none;
+    margin-right:1rem;
+    &:active,:focus,:hover{
+        border:none;
+    }
+    &:hover{
+        border:none;
+    }
+    &:focus:invalid{
+        border-bottom:4px solid red;
+    }
+    &::-webkit-input-placeholder{
+        color:$font-color-secondary;
+        font-size:1.4rem;
+    }
+}
