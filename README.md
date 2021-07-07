@@ -29,4 +29,5 @@ For this challenge you'll need to:
  - CSS architecture is built by The 7-1 rule, component-based design and the BEM methodology.
  - Built using SASS.
 
-
+## Starting Application
+ - use "npm start" on your local machine to start the application.
