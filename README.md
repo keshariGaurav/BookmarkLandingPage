@@ -1,12 +1,7 @@
 # Frontend Mentor - Bookmark landing page
 
 ![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+![image](https://user-images.githubusercontent.com/81485471/124688489-77e7d280-def4-11eb-9752-0ba771518797.png)
 
 
 
